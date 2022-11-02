@@ -1,0 +1,10 @@
+*Faça as modificações corretas de acordo com seu ambiente.*
+
+    Por algum motivo o pyautogui.PAUSE para esperar alguns seg para cada comando chamado não funcionou, por isso usei bastante o 
+    time.sleep().
+    
+    Nem sempre o pyautogui.write() irá escrever o texto corretamento no pt-BR. Então, use o pyperclip.copy() para copiar o texto sem problemase o pyautogui.hotkey('ctrl', 'v') para colar a copiá.
+
+    Para clicar com pyautogui.click() é necessário a localização de X e Y da tela do PC, que é diferente para cada. Para descobrir a posição usamos o pyautogui.position() com o `time.sleep()` para dar o tempo de colocar o cursor do mouse no lugar que queremos onde seja clicado, com isso ele mostrará posição de X e Y dando um valor diferente para cada.
+
+    Feito com ensinamentos do Lira da HashTag (YT: HashTag Programação) no Intensivão de Python.
